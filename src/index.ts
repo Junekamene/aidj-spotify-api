@@ -170,6 +170,3 @@ app.post("/updatequeue", async (req: Request, res: Response): Promise<void> => {
 app.listen(3000, () => {
   console.log("Listening on Port 3000");
 });
-
-
-export default app;

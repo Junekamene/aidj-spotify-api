@@ -31,13 +31,17 @@
     <!-- Now Playing -->
     <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
       <h2 class="text-2xl font-semibold mb-2">Currently Playing</h2>
-      <div id="current-song" class="text-sm">Loading...</div>
+      <img id="current-cover" src="" alt="Album Cover" class="w-48 h-48 rounded-lg shadow mb-4">
+      <div class="text-center">
+        <p id="current-title" class="text-xl font-bold">Loading...</p>
+        <p id="current-artist" class="text-gray-400 mt-1">Artist</p>
     </div>
     <!-- Queue -->
-    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2">Queue</h2>
-      <ul id="queue-list" class="space-y-2 text-sm"></ul>
-    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4">Upcoming Queue</h2>
+      <div id="queue-container" class="flex overflow-x-auto space-x-4">
+        <!-- Songs will be inserted here dynamically -->
+      </div>
 
     <!-- Add Song to Queue -->
     <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
